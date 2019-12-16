@@ -3,9 +3,9 @@ const backgroundColor = "#F3F0ED";
 export default {
 
     backgroundColor: backgroundColor,
-    elementPadding:24,
+    elementPadding: 24,
 
-    pageCenter : {
+    pageCenter: {
         display: "flex",
         flexDirection: "row",
         alignItems: "   center",
@@ -57,11 +57,14 @@ export default {
     },
 
     shallowButton: {
-       // padding: "6px 3px 3px 6px",
-       // color: backgroundColor,
+        // padding: "6px 3px 3px 6px",
+        // color: backgroundColor,
         //backgroundColor: "#4441",
         //borderRadius: 5,
-       // display: "inline-block",
+        // display: "inline-block",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
         cursor: "pointer",
     },
 

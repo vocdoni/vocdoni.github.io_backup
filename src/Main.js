@@ -5,6 +5,10 @@ import Background from "./Background";
 import Section from "./Section";
 import Styles from "./Styles";
 import Track from "./Analytics"
+import { Twitter } from 'react-feather';
+import { AtSign } from 'react-feather';
+import { Gitlab } from 'react-feather';
+import { Send } from 'react-feather';
 
 const title = {
     textTransform: "uppercase",
@@ -166,10 +170,10 @@ export default class Main extends React.Component {
             title={<div style={title}> <span style={Styles.highlight}>Connect</span> with us</div>}
             child1={
                 <div>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("mailto:hello@vocdoni.io")}>Get in touch</p>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://twitter.com/vocdoni")}>Twitter</p>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://t.me/vocdoni")}>Telegram</p>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://gitlab.com/vocdoni/")}>Gitlab</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("mailto:hello@vocdoni.io")}><AtSign style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" /> E-mail</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://twitter.com/vocdoni")}><Twitter style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" />Twitter</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://t.me/vocdoni")}><Send style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" />Telegram</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://gitlab.com/vocdoni/")}><Gitlab style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" />Gitlab</p>
 
                 </div>
             }
