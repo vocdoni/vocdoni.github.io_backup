@@ -56,6 +56,15 @@ export default {
         marginTop: 40,
     },
 
+    shallowButton: {
+       // padding: "6px 3px 3px 6px",
+       // color: backgroundColor,
+        //backgroundColor: "#4441",
+        //borderRadius: 5,
+       // display: "inline-block",
+        cursor: "pointer",
+    },
+
     highlight: {
         display: "inline",
         fontWeight: 900,

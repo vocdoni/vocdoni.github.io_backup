@@ -161,6 +161,28 @@ export default class Main extends React.Component {
         />
     }
 
+    getFooterPage = () => {
+        return <Section
+            title={<div style={title}> <span style={Styles.highlight}>Connect</span> with us</div>}
+            child1={
+                <div>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("mailto:hello@vocdoni.io")}>Get in touch</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://twitter.com/vocdoni")}>Twitter</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://t.me/vocdoni")}>Telegram</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://gitlab.com/vocdoni/")}>Gitlab</p>
+
+                </div>
+            }
+            child2={
+                <div>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/vision")}>Our vision</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/open-positions")}>Work with us</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/architecture/general")}>Technical architecture</p>
+                </div>
+            }
+        />
+    }
+
     onPageChange = (number) => {
         this.setState({ currentPage: number });
     };
@@ -186,6 +208,7 @@ export default class Main extends React.Component {
                 {this.getUniversaly()}
                 {this.getBiometricPage()}
                 {this.getPrivacyPage()}
+                {this.getFooterPage()}
 
             </Pages>
             <Background />
