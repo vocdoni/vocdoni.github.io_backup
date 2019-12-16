@@ -170,18 +170,18 @@ export default class Main extends React.Component {
             title={<div style={title}> <span style={Styles.highlight}>Connect</span> with us</div>}
             child1={
                 <div>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/vision")}>Our vision</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/open-positions")}>Work with us</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/architecture/general")}>Technical architecture</p>
+                </div>
+            }
+            child2={
+                <div>
                     <p style={Styles.shallowButton} onClick={(e) => window.open("mailto:hello@vocdoni.io")}><AtSign style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" /> E-mail</p>
                     <p style={Styles.shallowButton} onClick={(e) => window.open("https://twitter.com/vocdoni")}><Twitter style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" />Twitter</p>
                     <p style={Styles.shallowButton} onClick={(e) => window.open("https://t.me/vocdoni")}><Send style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" />Telegram</p>
                     <p style={Styles.shallowButton} onClick={(e) => window.open("https://gitlab.com/vocdoni/")}><Gitlab style={{ paddingRight: 10 }} size="22" strokeWidth="1" color="#444" />Gitlab</p>
 
-                </div>
-            }
-            child2={
-                <div>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/vision")}>Our vision</p>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/open-positions")}>Work with us</p>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/architecture/general")}>Technical architecture</p>
                 </div>
             }
         />
