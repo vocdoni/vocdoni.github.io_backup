@@ -179,9 +179,10 @@ export default class Main extends React.Component {
             }
             child2={
                 <div>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/vision")}>Our vision</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://blog.vocdoni.io/vocdoni-reimagining-governance/")}>Our vision</p>
+                    <p style={Styles.shallowButton} onClick={() => this.gotoForm()}>Join the Beta</p>
                     <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/about-us/open-positions")}>Work with us</p>
-                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/architecture/general")}>Technical architecture</p>
+                    <p style={Styles.shallowButton} onClick={(e) => window.open("https://vocdoni.io/docs/#/architecture/general")}>Technical documentation</p>
                 </div>
             }
         />
@@ -195,6 +196,7 @@ export default class Main extends React.Component {
         return [
             <div key="App" style={Styles.highlight}>App</div>,
             <div key="Open Stack" onClick={(e) => this.gotoDocs()}> Open Stack</div>,
+            <div key="Blog" onClick={(e) => this.gotoDocs()}> Blog</div>,
         ]
     }
 
