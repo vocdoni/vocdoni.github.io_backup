@@ -196,7 +196,7 @@ export default class Main extends React.Component {
         return [
             <div key="App" style={Styles.highlight}>App</div>,
             <div key="Open Stack" onClick={(e) => this.gotoDocs()}> Open Stack</div>,
-            <div key="Blog" onClick={(e) => this.gotoDocs()}> Blog</div>,
+            <div key="Blog" onClick={(e) => window.open("https://blog.vocdoni.io/")}> Blog</div>,
         ]
     }
 
