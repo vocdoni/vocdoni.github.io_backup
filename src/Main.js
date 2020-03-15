@@ -37,7 +37,7 @@ export default class Main extends React.Component {
 
     gotoForm() {
         Track("Form")
-        window.open("https://xavi306763.typeform.com/to/eyvvuN")
+        window.open("https://airtable.com/shrE393FZSDHFrcBr")
     }
 
     getReimaginingPage = () => {
