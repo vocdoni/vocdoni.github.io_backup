@@ -10,13 +10,14 @@ Other than the above is just a React Create App static page.
 ---
 
 To develop:
+
 ```
 npm install
 npm start
 ```
 
-To deploy to Master:
+To deploy to Master (from `dev` branch):
 
 ```
-npm deploy
+npm run deploy
 ```
